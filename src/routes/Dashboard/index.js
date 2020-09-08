@@ -14,6 +14,15 @@ export default class Dashboard extends Component {
     return (
       <div class={`${style.home} page`}>
         <h1>Dashboard</h1>
+		<LayoutGrid>
+          <LayoutGrid.Inner>
+            <LayoutGrid.Cell cols="3"><Elevation z={4}>Z2</Elevation></LayoutGrid.Cell>
+            <LayoutGrid.Cell cols="3"><Elevation z={4}>Z2</Elevation></LayoutGrid.Cell>
+            <LayoutGrid.Cell cols="3"><Elevation z={4}>Z2</Elevation></LayoutGrid.Cell>
+            <LayoutGrid.Cell cols="3"><Elevation z={4}>Z2</Elevation></LayoutGrid.Cell>
+		
+          </LayoutGrid.Inner>
+        </LayoutGrid>
         <Card>
           <div class={style.cardHeader}>
             <h2 class=" mdc-typography--title">Dashboard card</h2>

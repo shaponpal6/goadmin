@@ -1,30 +1,33 @@
-import {h, Component} from 'preact';
-import Chips from 'preact-material-components/Chips';
-import 'preact-material-components/Chips/style.css';
+import { h, Component } from "preact";
+import TextField from "preact-material-components/TextField";
+import "preact-material-components/TextField/style.css";
+import Select from "preact-material-components/Select";
+import "preact-material-components/List/style.css";
+import "preact-material-components/Menu/style.css";
+import "preact-material-components/Select/style.css";
 
-export default class MenuBar extends Component {
-  render(){
+export default class TextFieldPage extends Component {
+  render() {
     return (
       <div>
-        <Chips>
-          <Chips.Chip>
-            <Chips.Icon className="material-icons" leading>wb_sunny</Chips.Icon>
-            <Chips.Text>Turn on lights</Chips.Text>
-          </Chips.Chip>
-          <Chips.Chip>
-            <Chips.Icon className="material-icons" leading>bookmark</Chips.Icon>
-            <Chips.Text>Bookmark</Chips.Text>
-          </Chips.Chip>
-          <Chips.Chip>
-            <Chips.Icon className="material-icons" leading>alarm</Chips.Icon>
-            <Chips.Text>Set alarm</Chips.Text>
-          </Chips.Chip>
-          <Chips.Chip>
-            <Chips.Icon className="material-icons" leading>directions</Chips.Icon>
-            <Chips.Text>Get directions</Chips.Text>
-          </Chips.Chip>
-        </Chips>
-      </div>
-    )
+        <TextField label="Form Name" outlined />
+    
+       <Select
+       outlined
+         hintText="Select a Form"
+         selectedIndex={this.state.chosenIndex}
+         onChange={(e) => {
+           this.setState({
+             chosenIndex: e.target.selectedIndex,
+           });
+         }}
+       >
+         <Select.Item>opt1</Select.Item>
+         <Select.Item>opt2</Select.Item>
+         <Select.Item>opt3</Select.Item>
+         <Select.Item>opt4</Select.Item>
+       </Select>
+     </div>
+    );
   }
 }
