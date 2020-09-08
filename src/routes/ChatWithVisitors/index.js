@@ -9,7 +9,7 @@ export default class ChatWithVisitors extends Component {
 	render() {
 		return (
 			<div class={`${style.home} page`}>
-				<h1>Dashboard</h1>
+				<h1>Chat With Visitors</h1>
 				<Card>
 					<div class={style.cardHeader}>
 						<h2 class=" mdc-typography--title">Dashboard card</h2>
