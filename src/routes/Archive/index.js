@@ -11,7 +11,7 @@ import "preact-material-components/Button/style.css";
 import "preact-material-components/Theme/style.css";
 import style from "./style";
 
-export default class Dashboard extends Component {
+export default class Archive extends Component {
   render() {
     return (
       <div class={`${style.home} page`}>

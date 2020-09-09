@@ -7,6 +7,7 @@ import ChatConsole from './routes/ChatConsole';
 import Settings from './routes/Settings';
 import SurveyForm from './routes/SurveyForm';
 import ChatWithVisitors from './routes/ChatWithVisitors';
+import Archive from './routes/Archive';
 import Operators from './routes/Operators';
 import NotFound from './routes/404';
 import './style';
@@ -34,6 +35,7 @@ export default class App extends Component {
 					<SurveyForm path="/survey-form/" />
 					<ChatWithVisitors path="/chat-with-visitors/" />
 					<Settings path="/settings/" />
+					<Archive path="/archive/" />
 					<Operators path="/operator/" user="me"/>
 					<Operators path="/operator/:user" />
 					<NotFound default />

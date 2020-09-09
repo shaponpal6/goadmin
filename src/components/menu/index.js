@@ -53,7 +53,7 @@ export default class MenuBar extends Component {
           </Chips.Chip>
           <Chips.Chip
             selected={props.selectedRoute === "/go-archived"}
-            onClick={this.linkTo("/go-archived")}
+            onClick={this.linkTo("/archive")}
           >
             <Chips.Icon className="material-icons" leading>
               archive
