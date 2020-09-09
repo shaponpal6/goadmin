@@ -1,5 +1,9 @@
-.profile {
-	padding: 20px;
-	min-height: 100%;
-	width: 100%;
+.consoleHeader {
+  padding: 0px;
+  background: #e0e0e0ba;
+}
+.consoleBody {
+  padding: 10px;
+  min-height: 100%;
+  width: 100%;
 }
