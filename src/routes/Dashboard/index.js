@@ -7,6 +7,7 @@ import "preact-material-components/LayoutGrid/style.css";
 import Elevation from 'preact-material-components/Elevation';
 import 'preact-material-components/Elevation/style.css';
 import List from "../../components/list";
+import Panel from "../../components/panel";
 import style from "./style";
 
 export default class Dashboard extends Component {
@@ -16,10 +17,10 @@ export default class Dashboard extends Component {
         <h1>Dashboard</h1>
 		<LayoutGrid>
           <LayoutGrid.Inner>
-            <LayoutGrid.Cell cols="3"><Elevation z={4}>Z2</Elevation></LayoutGrid.Cell>
-            <LayoutGrid.Cell cols="3"><Elevation z={4}>Z2</Elevation></LayoutGrid.Cell>
-            <LayoutGrid.Cell cols="3"><Elevation z={4}>Z2</Elevation></LayoutGrid.Cell>
-            <LayoutGrid.Cell cols="3"><Elevation z={4}>Z2</Elevation></LayoutGrid.Cell>
+            <LayoutGrid.Cell cols="3"><Panel text="Online Visitors" value="21212"/></LayoutGrid.Cell>
+            <LayoutGrid.Cell cols="3"><Panel text="Online Visitors" value="21212"/></LayoutGrid.Cell>
+            <LayoutGrid.Cell cols="3"><Panel text="Online Visitors" value="21212"/></LayoutGrid.Cell>
+            <LayoutGrid.Cell cols="3"><Panel text="Online Visitors" value="21212"/></LayoutGrid.Cell>
 		
           </LayoutGrid.Inner>
         </LayoutGrid>
