@@ -1,4 +1,5 @@
 import { h, Component } from "preact";
+import store from "../../store/store";
 import Card from "preact-material-components/Card";
 import "preact-material-components/Card/style.css";
 import "preact-material-components/Button/style.css";
@@ -9,23 +10,31 @@ import Panel from "../../components/panel";
 import style from "./style";
 
 export default class Dashboard extends Component {
-  render() {
+
+  constructor(){
+    super();
+    this.setState(store.dashboard);
+  }
+
+  render(props, state) {
+    console.log(props);
+    console.log(state);
     return (
       <div class={`${style.home} page`}>
         <LayoutGrid>
           <h1>Dashboard</h1>
           <LayoutGrid.Inner>
             <LayoutGrid.Cell cols="3">
-              <Panel text="Online Visitors" value="21212" />
+              <Panel text="Online Visitors" value={state.onlineVisitors} />
             </LayoutGrid.Cell>
             <LayoutGrid.Cell cols="3">
-              <Panel text="Total Client" value="3223" />
+              <Panel text="Total Client" value={state.totalClients}  />
             </LayoutGrid.Cell>
             <LayoutGrid.Cell cols="3">
-              <Panel text="Total Operators" value="231" />
+              <Panel text="Total Operators" value={state.totalOperators}  />
             </LayoutGrid.Cell>
             <LayoutGrid.Cell cols="3">
-              <Panel text="Panding Actions" value="3232" />
+              <Panel text="Panding Actions" value={state.surveyData}  />
             </LayoutGrid.Cell>
           </LayoutGrid.Inner>
         </LayoutGrid>
@@ -41,7 +50,7 @@ export default class Dashboard extends Component {
                   </div>
                 </div>
                 <div class={style.cardBody}>
-                  <List />
+                  <List data={state.activities}/>
                 </div>
                 <Card.Actions>
                   <Card.ActionButton>OKAY</Card.ActionButton>

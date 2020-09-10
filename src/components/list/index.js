@@ -3,7 +3,8 @@ import List from 'preact-material-components/List';
 import 'preact-material-components/List/style.css';
 
 export default class ListPage extends Component {
-  render(){
+
+  render(props, state){
     return (
       <div>
         <List>
