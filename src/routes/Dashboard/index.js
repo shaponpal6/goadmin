@@ -57,7 +57,7 @@ export default class Dashboard extends Component {
               </Card>
             </LayoutGrid.Cell>
             <LayoutGrid.Cell cols="12">
-              <p>All Right Reserved</p>
+              <p>All Right</p>
             </LayoutGrid.Cell>
           </LayoutGrid.Inner>
         </LayoutGrid>
