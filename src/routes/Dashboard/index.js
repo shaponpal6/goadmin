@@ -10,8 +10,7 @@ import Panel from "../../components/panel";
 import style from "./style";
 
 export default class Dashboard extends Component {
-
-  constructor(){
+  constructor() {
     super();
     this.setState(store.dashboard);
   }
@@ -28,13 +27,13 @@ export default class Dashboard extends Component {
               <Panel text="Online Visitors" value={state.onlineVisitors} />
             </LayoutGrid.Cell>
             <LayoutGrid.Cell cols="3">
-              <Panel text="Total Client" value={state.totalClients}  />
+              <Panel text="Total Client" value={state.totalClients} />
             </LayoutGrid.Cell>
             <LayoutGrid.Cell cols="3">
-              <Panel text="Total Operators" value={state.totalOperators}  />
+              <Panel text="Total Operators" value={state.totalOperators} />
             </LayoutGrid.Cell>
             <LayoutGrid.Cell cols="3">
-              <Panel text="Panding Actions" value={state.surveyData}  />
+              <Panel text="Panding Actions" value={state.surveyData} />
             </LayoutGrid.Cell>
           </LayoutGrid.Inner>
         </LayoutGrid>
@@ -50,7 +49,7 @@ export default class Dashboard extends Component {
                   </div>
                 </div>
                 <div class={style.cardBody}>
-                  <List data={state.activities}/>
+                  <List data={state.activities} />
                 </div>
                 <Card.Actions>
                   <Card.ActionButton>OKAY</Card.ActionButton>
@@ -58,7 +57,7 @@ export default class Dashboard extends Component {
               </Card>
             </LayoutGrid.Cell>
             <LayoutGrid.Cell cols="12">
-              <p>All Right </p>
+              <p>All Right Reserved</p>
             </LayoutGrid.Cell>
           </LayoutGrid.Inner>
         </LayoutGrid>
